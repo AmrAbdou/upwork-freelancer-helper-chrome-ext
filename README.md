@@ -1,0 +1,1 @@
+# upwork-freelancer-helper-chrome-ext
