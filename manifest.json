@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+
+  "name": "UpWork Freelancer Helper",
+  "short_name": "upworkhelper",
+  "description": "Upwork Freelancer Helper is a light weight Chrome extension that adds a small yet neat menu to UpWork website that makes writing & sending proposals to clients easier & more effective than ever.",
+  "version": "1.0",
+  "author": "Amr Abdou",
+
+  "background": {
+    "scripts": [""], 
+    "persistent": true
+  }, 
+
+  "browser_action": {
+   "default_icon": {
+      "19": "assets/img/upworkfreelancerhelper_icon_19.png",
+      "38": "assets/img/upworkfreelancerhelper_icon_38.png"
+    },
+    "default_title": "UpWork Freelancer Helper",
+    "default_popup": "popup.html"
+  },
+
+  "icones": {
+    "16" : "assets/img/upworkfreelancerhelper_icon_16.png", 
+    "48" : "assets/img/upworkfreelancerhelper_icon_48.png",
+    "128" : "assets/img/upworkfreelancerhelper_icon_128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.upwork.com/*"],
+      "css": ["node_modules/font-awesome/css/font-awesome.min.css", "assets/css/website_menu.css"],
+      "js" : ["node_modules/jquery/dist/jquery.min.js", "assets/js/website_menu.js"]
+    }
+  ],
+
+  "permissions": [
+   "activeTab",
+   "background",
+   "storage"
+   ]
+}

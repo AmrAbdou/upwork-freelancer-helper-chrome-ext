@@ -1,0 +1,30 @@
+#up-helper-header-extra-menu {
+	background-color: #37a100;
+	color: #fff;
+	font-size: 14px;
+}
+
+#up-helper-header-extra-menu ul {
+	
+}
+
+#up-helper-header-extra-menu ul li {
+	
+}
+
+#up-helper-header-extra-menu ul li i.fa {
+	
+}
+
+#up-helper-header-extra-menu ul li a {
+	text-decoration: none;
+}
+
+#up-helper-header-extra-menu ul li a:hover, 
+#up-helper-header-extra-menu ul li a:focus, 
+#up-helper-header-extra-menu ul li a:active {
+	background-color: #6fda44;
+	text-decoration: none;
+}
+
+	
